@@ -1,0 +1,29 @@
+
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+#sticky-footer{
+	background-color: #040515;
+}
+.jumbotron {
+	background-image: asset-url('youth.jpg');
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 70vh;
+    width: 70vw;	
+    margin-top: 3vh;
+ }
+body {
+	background-color: #A0A0A0;
+}
+.nav-item {
+	font-weight: bold;
+	margin: auto;
+	padding-left: 2.5em;
+}
+.nav-link {
+	letter-spacing: 3px;
+
+}

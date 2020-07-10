@@ -1,0 +1,17 @@
+<div class="form-group">
+  <h1> Create new article </h1>
+	<div class= "container">
+		<%#= form_with model: @article, class: "nifty_form",url: articles_path, local: true do |f| %>
+		<%= form_with scope: :article, url: articles_path, local: true do |f| %>
+			<p>
+				<%= f.label :title ,"Title :"%>
+				<%= f.text_field :title, class: "form-control" %>
+			</p>
+			<p>  
+				<%= f.label :description, "Description:"%>
+				<%= f.text_area :description, size: "60x12", class: "form-control" %>
+			</p>  
+		  <p> <%= f.submit "Create"  %></p>
+		<% end %>
+	</div>
+</div>
