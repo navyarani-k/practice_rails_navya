@@ -3,7 +3,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 #sticky-footer{
-	background-color: #040515;
+	background-color: #343a40;
 }
 .jumbotron {
 	background-image: asset-url('youth.jpg');
@@ -11,8 +11,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    height: 70vh;
-    width: 70vw;	
+    height: 70vh;	
     margin-top: 3vh;
  }
 body {
@@ -26,4 +25,7 @@ body {
 .nav-link {
 	letter-spacing: 3px;
 
+}
+.footer-font {
+	font-size: 20px;
 }

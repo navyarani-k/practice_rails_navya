@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand " href="#" id= "logo">
-    <%= image_tag("NAVYA.jpg", height: '50', width: '100', opacity: '0.5')  %>
+    <%= link_to image_tag("NAVYA.jpg", height: '50', width: '100', opacity: '0.5' ), root_path %>
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,13 +9,15 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        <!-- <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a> -->
+        <%= link_to "HOME", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <div class="dropdown show">
           <a class="nav-link nav-item btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BLOG</a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">ARTICLES</a>
+            <!-- <a class="dropdown-item" href="#">ARTICLES</a> -->
+            <%= link_to "ARTICLES", articles_path, class: "dropdown-item" %>
             <a class="dropdown-item" href="#">BOOKS</a>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
