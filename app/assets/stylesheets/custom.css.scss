@@ -3,19 +3,19 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 #sticky-footer{
-	background-color: #343a40;
+	background-color: #212529;
 }
 .jumbotron {
-	background-image: asset-url('youth.jpg');
+	background-image: asset-url('autres-metiers.jpg');
 
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    height: 70vh;	
-    margin-top: 3vh;
+    height: 79vh;	
+    margin: 2vh;
  }
 body {
-	background-color: #A0A0A0;
+	background-color: #212529;
 }
 .nav-item {
 	font-weight: bold;
