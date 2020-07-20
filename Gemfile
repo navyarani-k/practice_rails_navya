@@ -16,7 +16,8 @@ gem 'sass-rails', '>= 6'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13.0'
 gem "font-awesome-rails"
-
+gem 'carrierwave-aws', '~> 1.5'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

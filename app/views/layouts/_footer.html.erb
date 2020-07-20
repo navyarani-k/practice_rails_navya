@@ -2,11 +2,22 @@
 	<div class="container">
 		<div class= "row">
 		<small>Copyright &copy; <%= link_to "navya", "https://google.com", class: "text-white" %></small>
-		<i class="mx-auto fa fa-facebook-official footer-font" aria-hidden="true"></i>
-		
-		<i class="mx-auto fa fa-share footer-font" aria-hidden="true"></i>
-		<i class=" mx-auto fa fa-whatsapp footer-font" aria-hidden="true"></i>
-		<i class=" mx-auto fa fa-instagram footer-font" aria-hidden="true"></i>     
+		<!-- <i class="mx-auto fa fa-facebook-official footer-font" aria-hidden="true"></i> -->
+		<%#= link_to '<i class="mx-auto fa fa-facebook-official footer-font" aria-hidden="true"></i>', 'www.facebook.com' %>
+        
+		<a href = "https://facebook.com", class= "footer-icons">
+			<%= fa_icon "facebook-f" %>
+
+		</a>
+		<a href = "https://twitter.com", class= "footer-icons">
+		  <%= fa_icon "twitter" %>
+		</a>
+		<a href = "https://instagram.com", class= "footer-icons instagram">
+		  <%= fa_icon "instagram" %>
+		</a>
+		<a href = "https://whatsapp.com", class= "footer-icons">
+		  <%= fa_icon "whatsapp", style: "color: #25d366"%>
+		</a>   
 		</div>
 	</div>
 </footer>

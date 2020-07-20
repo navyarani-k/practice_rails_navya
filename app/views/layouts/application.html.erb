@@ -10,9 +10,17 @@
   </head>
 
   <body>
-    
   <%= render 'layouts/navigation' %>
-  <%= yield %>
-  <%= render 'layouts/footer' %>
+
+   <div class="container-fluid"> 
+    <div id="page-content mt-2">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+   
+  </div>
+  <%= render 'layouts/footer' %> 
   </body>
+    
+
 </html>
