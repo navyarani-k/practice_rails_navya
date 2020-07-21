@@ -1,4 +1,4 @@
-class GalleriesController < ApplicationController
+ class GalleriesController < ApplicationController
   before_action :set_gallery, only: [:show, :edit, :update, :destroy]
 
   # GET /galleries
@@ -69,6 +69,6 @@ class GalleriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def gallery_params
-      params.require(:gallery).permit(:name, :image)
+      params.require(:gallery).permit(:name, :image, :remove_image)
     end
 end

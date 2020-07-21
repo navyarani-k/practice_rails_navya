@@ -18,7 +18,7 @@
     
   end
   def create
-  	@article = Article.new(params.require(:article).permit(:title, :description))
+  	@article = Article.new(params.require(:article).permit(:title, :description, :image))
   	if @article.save
       flash[:notice] = "article successfully saved"
   		redirect_to @article
@@ -29,7 +29,7 @@
   
   def update 
     @article = Article.find(params[:id])
-    if @article.update(params.require(:article).permit(:title, :description))
+    if @article.update(params.require(:article).permit(:title, :description, :image))
       flash[:notice] = "article updated successfully"
       redirect_to @article
     else

@@ -1,6 +1,6 @@
 <div class="form-group">
   <h2> Articles </h2>
-	<div class= "container">
+	<div class= "container form-fix">
 		<%#= form_with model: @article, class: "nifty_form",url: articles_path, local: true do |f| %>
 		<%#= form_with scope: :article, url: articles_path, local: true do |f| %>
 		<%= form_with(model: @article, local: true) do |f|%>
@@ -12,7 +12,12 @@
 			<p>  
 				<%= f.label :description, "Description", class: "label" %>
 				<%= f.text_area :description, size: "60x12", class: "form-control" %>
-			</p>  
+			</p> 
+			<div class="field input-group">
+		        <%= f.label :image ,class: "custom-file-input custom-file-label" %>
+		        <%= f.file_field :image , class: "custom-file input-group-text" %>
+            </div> 
+
 		  <p>
 		  	<%= f.submit "submit article" %>
 		  </p>

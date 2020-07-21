@@ -33,6 +33,8 @@
 
 body {
 	background-color: #383a3c !important;
+    /*background-color: #fff !important;*/
+
   margin: 0 !important;
   padding-top: 70px;
 }
@@ -173,4 +175,17 @@ table.responsive-table tbody> tr > td > p {
 table.responsive-table td {
   line-height: 2em;
   
+}
+/*.custom-file-label {
+  margin-bottom: 150px !important;
+}*/
+.form-fix {
+  margin-bottom: 120px;
+  
+}
+.show-img img {
+  width: inherit;
+}
+.button-center {
+  margin: auto;
 }
