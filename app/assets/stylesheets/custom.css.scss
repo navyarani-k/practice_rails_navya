@@ -170,6 +170,7 @@ table.responsive-table th {
 }
 table.responsive-table tbody> tr > td > p {
   text-align: left;
+  font-size: 15px;
 
 }
 table.responsive-table td {
@@ -188,4 +189,7 @@ table.responsive-table td {
 }
 .button-center {
   margin: auto;
+}
+.tbl-1 {
+  width: 25%;
 }
